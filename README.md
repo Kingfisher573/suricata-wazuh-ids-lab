@@ -159,16 +159,21 @@ The lab demonstrated the event path from controlled test traffic to Suricata det
 
 Create an `evidence/` folder in this repository and add your screenshots using these filenames:
 
-1. `evidence/01-Kali-Port-Scan-Test.png` — the `hping3` command and packet summary.
-2. `evidence/02-Suricata-Detection.png` — the custom signature in `eve.json`.
-3. `evidence/03-Wazuh-Dashboard-Alerts.png` — the custom alert and existing ET alert in the Wazuh dashboard.
+1. `01-Kali-Port-Scan-Test.PNG` — Kali TCP SYN test and packet summary.
+2. `02-Suricata-Detection.PNG` — Suricata detection in the EVE JSON log.
+3. `03-Wazuh-JSON-Alert.PNG` — Wazuh Manager JSON alert verification.
+4. `04-Wazuh-Dashboard-Alerts.PNG` — Suricata alerts displayed in the Wazuh dashboard.
 
 Once the images are committed, add these lines to display them in this README:
 
 ```markdown
-![Kali TCP SYN test](evidence/01-Kali-Port-Scan-Test.png)
-![Suricata EVE JSON alert](evidence/02-Suricata-Detection.png)
-![Wazuh dashboard alerts](evidence/03-Wazuh-Dashboard-Alerts.png)
+![Kali TCP SYN test](01-Kali-Port-Scan-Test.PNG)
+
+![Suricata EVE JSON alert](02-Suricata-Detection.PNG)
+
+![Wazuh JSON alert verification](03-Wazuh-JSON-Alert.PNG)
+
+![Wazuh dashboard alerts](04-Wazuh-Dashboard-Alerts.PNG)
 ```
 
 Only include screenshots you have captured. Review them for credentials, tokens, public IP addresses, and unrelated sensitive information before publishing.
