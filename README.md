@@ -157,24 +157,28 @@ The lab demonstrated the event path from controlled test traffic to Suricata det
 
 ## Evidence
 
-Create an `evidence/` folder in this repository and add your screenshots using these filenames:
+The following screenshots document the end-to-end Suricata-to-Wazuh detection pipeline. All four images are stored in the repository root.
 
-1. `01-Kali-Port-Scan-Test.PNG` — Kali TCP SYN test and packet summary.
-2. `02-Suricata-Detection.PNG` — Suricata detection in the EVE JSON log.
-3. `03-Wazuh-JSON-Alert.PNG` — Wazuh Manager JSON alert verification.
-4. `04-Wazuh-Dashboard-Alerts.PNG` — Suricata alerts displayed in the Wazuh dashboard.
+1. **Kali TCP SYN test** — Test command and packet summary.
+2. **Suricata detection** — Custom signature recorded in the EVE JSON log.
+3. **Wazuh JSON alert** — Verification of the alert in the Wazuh Manager's JSON log.
+4. **Wazuh dashboard alerts** — Custom and existing Suricata alerts displayed in the dashboard.
 
-Once the images are committed, add these lines to display them in this README:
+### 1. Kali TCP SYN test
 
-```markdown
-![Kali TCP SYN test](01-Kali-Port-Scan-Test.PNG)
+![Kali TCP SYN test](./01-Kali-Port-Scan-Test.PNG)
 
-![Suricata EVE JSON alert](02-Suricata-Detection.PNG)
+### 2. Suricata detection
 
-![Wazuh JSON alert verification](03-Wazuh-JSON-Alert.PNG)
+![Suricata EVE JSON alert](./02-Suricata-Detection.PNG)
 
-![Wazuh dashboard alerts](04-Wazuh-Dashboard-Alerts.PNG)
-```
+### 3. Wazuh JSON alert
+
+![Wazuh JSON alert verification](./03-Wazuh-JSON-Alert.PNG)
+
+### 4. Wazuh dashboard alerts
+
+![Wazuh dashboard alerts](./04-Wazuh-Dashboard-Alerts.PNG)
 
 Only include screenshots you have captured. Review them for credentials, tokens, public IP addresses, and unrelated sensitive information before publishing.
 
