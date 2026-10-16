@@ -1,10 +1,10 @@
 # Suricata IDS + Wazuh SIEM: TCP SYN-Probe Detection Lab
 
-A hands-on SOC lab demonstrating network intrusion detection with Suricata and end-to-end security alert ingestion into Wazuh.
+A hands-on SOC lab demonstrating network intrusion detection with Suricata and end-to-end security alert integration with Wazuh SIEM.
 
-> **Result:** A controlled TCP SYN-probe test generated alerts in Suricata. Events were written to EVE JSON, collected by the Wazuh agent, processed by the Wazuh Manager, and displayed in the Wazuh dashboard.
+> **Result:** A controlled TCP SYN-probe test triggered the custom Suricata detection rule. The resulting event was recorded in EVE JSON, collected by the Wazuh agent, processed by the Wazuh Manager, and verified in the Wazuh dashboard.
 >
-> **Scope:** This project demonstrates detection and alerting. It does **not** demonstrate automatic blocking or prevention.
+> **Scope:** This project demonstrates network intrusion detection, log forwarding, and SIEM alert visibility. It does not demonstrate automatic traffic blocking or prevention.
 
 ## Table of Contents
 
