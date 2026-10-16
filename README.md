@@ -32,6 +32,12 @@ The objective was to build and validate a network intrusion detection pipeline u
 - Capture evidence from the traffic generator, IDS log, and SIEM dashboard.
 
 ## Lab Architecture
+## Architecture Diagram
+
+The diagram below illustrates the flow of test traffic, Suricata detection, Wazuh agent log forwarding, and alert visualization in the dashboard.
+
+![Suricata and Wazuh lab architecture](./suricata-wazuh-architecture.png)
+
 
 | Component | Role | Lab address / location |
 |---|---|---|
