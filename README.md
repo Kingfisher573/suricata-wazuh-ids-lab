@@ -17,6 +17,7 @@ A hands-on SOC lab demonstrating network intrusion detection with Suricata and e
 - [Evidence](#evidence)
 - [Limitations](#limitations)
 - [Lessons and Next Steps](#lessons-and-next-steps)
+- [Conclusion](#conclusion)
 
 ## Overview
 
@@ -107,7 +108,7 @@ The following command was run on Kali Linux:
 sudo hping3 -S -p 22 -c 12 -i u200000 192.168.111.143
 ```
 
-This sent 12 TCP SYN probes toward port 22 on the Ubuntu VM, at an interval of approximately 200 milliseconds. The command output reported 12 packets transmitted and 12 received, with 0% packet loss.
+Kali transmitted 12 TCP SYN probes toward the Ubuntu sensor. Suricata generated an alert matching the custom detection rule, and the resulting event was confirmed in EVE JSON and the Wazuh dashboard. The hping3 response statistics were recorded separately from the IDS detection evidence.
 
 **Interpretation:** This was a controlled, single-target TCP SYN-probe test against one port. It is best described as scan-like activity rather than a broad multi-port scan.
 
